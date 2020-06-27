@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1> *CALCULATOR* </h1>
+   <div id="main">
+       <div>
+           <input type="text" name="" id="scrn" onfocus="this.style.backgroundColor = 'whitesmoke'"  onblur="this.style.backgroundColor ='gainsboro'">
+       </div>
+       
+           <div>
+            <tr>
+                <td><button id="btn" onclick="insert('(')"> ( </button></td>
+                <td><button id="btn" onclick="insert(')')"> ) </button></td>
+                <td ><button id="dlt" onclick="clr()"> CLR</button></td>
+                
+            </tr>
+           </div >
+           <table style="margin:0 20%;"> 
+               <tr>
+                   <td><button id="btn" onclick="insert('7')">7</button></td>
+                   <td><button id="btn" onclick="insert('8')">8</button></td>
+                   <td><button id="btn" onclick="insert('9')">9</button></td>
+                   <td><button id="btn" onclick="insert(' + ')">+</button></td>
+               </tr>
+               <tr>
+                <td><button id="btn" onclick="insert('4')">4</button></td>
+                <td><button id="btn" onclick="insert('5')">5</button></td>
+                <td><button id="btn" onclick="insert('6')">6</button></td>
+                <td><button id="btn" onclick="insert(' - ')"> - </button></td>
+               </tr>
+               <tr>
+                <td><button id="btn" onclick="insert('1')">1</button></td>
+                <td><button id="btn" onclick="insert('2')">2</button></td>
+                <td><button id="btn" onclick="insert('3')">3</button></td>
+                <td><button id="btn" onclick="insert('*')"> x </button></td>
+               </tr>
+               <tr>
+                <td><button id="btn" onclick="insert('0')">0</button></td>
+                <td><button id="btn" onclick="insert('.')"> . </button></td>
+                <td><button id="btn" onclick="result()">=</button></td>
+                <td><button id="btn" onclick="insert('/')">/</button></td>
+               </tr>
+           </table>
+   </div>
+</body>
+<script src="app.js"></script>
+</html>
